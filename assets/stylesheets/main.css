@@ -79,9 +79,13 @@ aside {
 
 footer {
 
-  width: 80%;
-  border-top: 1px solid #E8E8E8;
-  height: 81px;
+    height: 40px;
+     font-size: 13px;
+    color: #BABABA;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    
 
 }
 
@@ -96,8 +100,169 @@ footer {
 
   height: 302px;
   width: 100%;
-  
+    background-image: url(../images/texture.png);
+    padding: 55px 0;
+    margin-bottom: 67px;
 
 }
 
+.signingOpts {
+    
+    width:503px;
+    margin: auto;
+    height: 57px;
+}
+
+.signingOpts span {
+    
+    vertical-align: middle;
+}
+
+.signingOpts div {
+    
+    display: inline-block;
+}
+
+/* TYPOGRAPHY */
+
+body {
+    
+    font-family: 'Lato', sans-serif;
+    
+}
+
+h2 {
+    font-size: 22px;
+    color: #5E5E5E;
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+
+
+/*GENERALS*/
+
+.btn {
+    
+    border-radius: 2px;
+    background-color: #D57373;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+/*elements*/
+
+.showban img {
+    
+    width: 297px;
+    margin: auto;
+    display: block;
+}
+
+.socials {
+    
+    width: 168px;
+    height: 35px;
+    border-top: 1px solid #D1D1D1;
+    padding-top: 5px;
+}
+
+
+
+.txtLabels {
+    
+    color: #474747;
+    font-size: 13px;
+    height: 14px;
+    width: 100%;
+}
+
+.txtLabels span {
+    
+    float: right;
+}
+
+
+.socials .btn {
+    
+    width: 45%;
+    display: inline-block;
+    height: 100%;
+}
+
+.socials .face {
+    
+    background-color: #3B5998;
+}
+
+.socials .google {
+    
+    background-color: #D34836;
+    margin-left: 8%;
+}
+
+.signUp {
+    
+    height: 35px;
+    padding-top: 6px;
+    width: 147px;
+    margin-left: 20px;
+}
+
+.signUp .btn {
+    
+    display: block;
+    width:100%;
+    height: 100%;
+    
+    line-height: 100%;
+    
+}
+
+.startUsing {
+    
+    height: 35px;
+    border-top: 1px solid #D1D1D1;
+    padding-top: 5px;
+    width: 96px;
+    float: right;
+}
+
+.startUsing .btn {
+    
+    display: block;
+    width:100%;
+    height: 100%;
+    
+    
+}
+
+/* FOOTER NAV */
+
+footer nav {
+    
+    border-top: 1px solid #E8E8E8;
+    padding-top: 10px;
+    margin: auto;
+    width: 70%;
+    height: 14px;
+    
+}
+
+footer ul {
+    
+    width: 27%;
+    margin: auto;
+}
+
+footer li {
+    
+    float: left;
+    display: inline-block;
+    margin-right: 10px;
+   
+    
+}
 
