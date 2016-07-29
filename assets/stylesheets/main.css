@@ -64,10 +64,13 @@ table {
 
 
 header {
-
-  background-color: #D57373;
-  height: 17px;
+    
+  height: 319px;
   width: 100%;
+    border-top: 17px solid #D57373;
+    background-image: url(../images/texture.png);
+    padding: 55px 0;
+    margin-bottom: 67px;
 }
 
 aside {
@@ -93,16 +96,6 @@ footer {
 
   padding: 0 20px;
   width: 100%;
-
-}
-
-.showban {
-
-  height: 302px;
-  width: 100%;
-    background-image: url(../images/texture.png);
-    padding: 55px 0;
-    margin-bottom: 67px;
 
 }
 
@@ -150,11 +143,17 @@ h2 {
     font-size: 14px;
     color: white;
     text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    
+    background-color: #c76b6b;
 }
 
 /*elements*/
 
-.showban img {
+header img {
     
     width: 297px;
     margin: auto;
@@ -249,7 +248,7 @@ h2 {
     
 }
 
-/* FOOTER NAV */
+/* FOOTER NAV - HOME AND SIGN UP*/
 
 footer nav {
     
@@ -275,4 +274,84 @@ footer li {
    
     
 }
+
+/*Sign Up*/
+
+.form {
+    
+    width: 100%;
+}
+
+form input {
+    
+    width: 48%;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid #D57373;
+    padding-left: 10px;
+}
+
+form div {
+    
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+form .right {
+    float: right;
+}
+
+form .wide {
+    
+    width: 100%;
+    margin: 0;
+}
+
+/*Placeholder Styling*/
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    
+    color: #e28383;
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    
+    color: #e28383;
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    
+    color:    #e28383;
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    
+    color: #e28383;
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    opacity:  1;
+}
+
+/*end */
+
+form input[type="submit"] {
+    
+    color: white;
+    background-color: #D57373;
+    border: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+form input[type="submit"]:hover {
+    
+    background-color: #c76b6b;
+}
+
+
 
