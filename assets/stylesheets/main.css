@@ -480,14 +480,24 @@ footer.inner-pages nav ul{
     border-left: 5px solid black;
     border-radius: 0 2px 2px 0;
     margin-bottom: 9px;
+    font-size: 13px;
+    color: #5E5E5E;
+    line-height: 31px;
+    padding-left: 10px;
 }
 
-.task input {
-    display: inline-block;
+.task img {
+    
+    height: 50%;
 }
-.taks label {
-    display: inline-block;
-    float: right;
+
+.task .tick {
+    
+    height: 30%;
+    left: -14px;
+    top: -3px;
+    position: relative;
+    display: none;
 }
 
 /*side-menus*/
