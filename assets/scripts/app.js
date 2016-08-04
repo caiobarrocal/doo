@@ -1,8 +1,8 @@
 var main = function() {
     
-    $('.task img').click(function() {
-        $('.task .tick').show();
-    },200);
+    $('.checkbox').click(function() {
+        $(this).addClass('checked');
+    });
 };
 
 $(document).ready(main);
