@@ -84,6 +84,7 @@ aside {
   width: 17%;
     float: left;
     background: url(../images/backgrounds/back1.jpg);
+    background-size: 100% auto;
 }
 
 .tasks {
@@ -148,7 +149,7 @@ footer {
 body {
     
     font-family: 'Lato', sans-serif;
-    
+    font-size: 14px;
 }
 
 h1 {
@@ -198,6 +199,15 @@ h2 {
     background-color: rgba(0, 0, 0, .6);
     padding-top: 20px;
 }
+
+/*remove scrollbar */
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+
 
 /*elements*/
 
@@ -480,7 +490,7 @@ footer.inner-pages nav ul{
     border-left: 5px solid black;
     border-radius: 0 2px 2px 0;
     margin-bottom: 9px;
-    font-size: 13px;
+    font-size: 14px;
     color: #5E5E5E;
     line-height: 35px;
     padding-left: 10px;
@@ -489,7 +499,8 @@ footer.inner-pages nav ul{
 .task p {
     
     display: inline-block;
-    position: absolute;
+    position: relative;
+    margin-top: -2px;
 }
 
 .checkbox {
@@ -506,7 +517,8 @@ footer.inner-pages nav ul{
 
 .checked {
     
-    background-color: aqua;
+    border:3px solid white;
+    background-color: #757575;
 }
 /*side-menus*/
 
@@ -516,30 +528,52 @@ footer.inner-pages nav ul{
     margin: auto;
     margin-top: 35px;
     color: white;
-    font-size: 13px;
+  
 }
 
 .side-menu nav {
     
     margin-top: 19px;
-    padding-left: 16px;
     height: 160px;
     overflow: scroll;
 }
 
 .side-menu ul {
     
-    list-style: circle;
+    list-style: none;
 }
 
 .side-menu li {
     
     margin-bottom: 14px;
+    line-height: 1em;
+}
+
+.side-menu .list-mark {
+
+	width: 1em;
+	height: 1em;
+	background-color: blue;
+	display:inline-block;
+	margin-right: 0.8em;
+	position: relative;
+	margin-top: 1px;
+}
+
+.menu-of-lists .list-mark {
+
+	border-radius: 2px;
+}
+
+.menu-of-projects .list-mark {
+
+	border-radius: 100%;
 }
 
 .side-menu a {
     text-decoration: none;
     color: inherit;
+    position: absolute;
 }
 
 
