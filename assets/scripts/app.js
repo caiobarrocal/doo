@@ -4,11 +4,6 @@ var getTask = function(x) {
 	return task;
 }
 
-var removeTask = function(x) {
-
-	$(x).remove();
-}
-
 var main = function() {
 
     $('.task-adder').focus(function() {
@@ -17,17 +12,19 @@ var main = function() {
     			var newTask = getTask('inputter');
     			$('.list').append('<div class="task newDiv" style="display:none;"><div class="checkbox"></div><p>'+newTask.toString()+'</p></div>');
     			$('.newDiv').appendTo('.list').show(100);
-
+                
     			var event;
     		};
 
     	});
     	 
     });
-
-    $('.checkbox').click(function() {
+    
+    $('.list').on( 'click','.task .checkbox', function() {
         $(this).addClass('checked');
-        $(this).parent().hide(400);
+        $(this).parent().fadeOut(200, function(){
+            $(this).remove();
+        });
     });
 };
 
