@@ -8,7 +8,10 @@
 	</head>
 
 	<body>
+       
 		<div class="border"><!-- Nothing at all, only our cool bar --></div>
+
+         
         
         <!-- sidebar with lists, projects and logo -->
         <aside>
@@ -18,24 +21,26 @@
                 <img src="assets/images/logoWhite.png">
                 
                 <div class="side-menu">
-                    <p class="menu-title">my lists <a class="add-object"></a></p>
-                    <nav class="menu-of-lists">
-                        <ul>
-                            <li><div class ="list-mark "></div><a href="#">shopping list</a></li>
-                            <li><div class ="list-mark "></div><a href="#">birthday party check</a></li>
-                            <li><div class ="list-mark "></div><a href="#">things to pack for travel</a></li>
-                        </ul>
-                    </nav>
-                    
-                    <p class="menu-title">my projects <a class="add-object"></a></p>
-                    <nav class="menu-of-projects">
-                        <ul>
-                            <li><div class ="list-mark "></div><a href="#">UX learning</a></li>
-                            <li><div class ="list-mark "></div><a href="#">change management</a></li>
-                            <li><div class ="list-mark "></div><a href="#">dev that new app</a></li>
-                        </ul>
-                    </nav>
-                    
+                    <div class ='lists-menu'>
+                        <p class="menu-title">my lists<span class='add-object add-list'><a href='#'>add list</a></span></p> 
+                        <nav class="menu-of-lists">
+                            <ul>
+                                <li><div class ="list-mark "></div><a href="#">shopping list</a></li>
+                                <li><div class ="list-mark "></div><a href="#">birthday party check</a></li>
+                                <li><div class ="list-mark "></div><a href="#">pack for travel</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class ='projects-menu'>
+                        <p class="menu-title">my projects <a href='#' class="add-object add-project">add project</a></p>
+                        <nav class="menu-of-projects">
+                            <ul>
+                                <li><div class ="list-mark "></div><a href="#">UX learning</a></li>
+                                <li><div class ="list-mark "></div><a href="#">change management</a></li>
+                                <li><div class ="list-mark "></div><a href="#">dev that new app</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                     
                 </div>
             </div>
@@ -44,6 +49,24 @@
         </aside>
         
         <section class="tasks">
+            <div class='new-flash'>
+                <input type='text' placeholder="Type your new list's name..." class='name-adder' id='list-name-inputter'>
+                
+                <h2>Choose a color</h2>
+                
+                <div class='colors'>
+                    <div class='color' id='c1'></div>
+                    <div class='color' id='c2'></div>
+                    <div class='color' id='c3'></div>
+                    <div class='color' id='c4'></div>
+                    <div class='color' id='c5'></div>
+                    
+                </div>
+                
+                <a class='btn'>Create New List</a>
+                <a class='btn'>Cancel</a>
+                
+            </div>
             
             <h1>shopping list  &nbsp<span>list</span></h1>
             
