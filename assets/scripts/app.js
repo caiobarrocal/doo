@@ -4,8 +4,15 @@ var getTask = function(x) {
 	return task;
 }
 
-var main = function() {
+var createNewListPage = function(color, name) {
+    
+    var opened = window.open("", "_self");
+    opened.document.write(new_list_page_structure);
+}
 
+var main = function() {
+    
+    var chosen_color='black';
 
     //side-menu interation
 
@@ -26,14 +33,29 @@ var main = function() {
          $('.add-project').fadeOut(200);
     }
     );
-
+    
+    //control add-screen appearing and disapearing
     $('.add-list').click(function() {
 
         $('.new-flash').fadeIn(100);
-    })
+    });
+    
+    $('.new-flash #cancel-button').click(function() {
 
-
-
+        $('.new-flash').fadeOut(100);
+        chosen_color='';
+    });
+    
+    $('.colors').on( 'click','.color', function() {
+        chosen_color = $(this).css("background-color");
+    });
+    
+    $('.new-flash #create-button').click(function() {
+       
+        createNewListPage(chosen_color, 'azul');
+        
+    });
+    
     // task adding and removing
 
     $('.task-adder').focus(function() {
@@ -60,8 +82,7 @@ var main = function() {
 
    /* $('.add-object a').click(function() {
 
-        var opened = window.open("", "_self");
-        opened.document.write("<html><head><title>My title</title></head><body>test</body></html>");
+        
     })*/
     
 };
