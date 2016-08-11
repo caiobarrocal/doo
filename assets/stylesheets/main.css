@@ -648,6 +648,7 @@ footer.inner-pages nav ul{
     width: 80%;
     height: 50px;
     border-top: 0.5px solid #d4d4d4; 
+    padding-top: 10px;
 }
 
 .new-flash textarea:focus, input:focus{
@@ -695,6 +696,16 @@ footer.inner-pages nav ul{
     display: inline-block;
     margin-right: 3px;
     border-radius: 2px;
+}
+
+.color:hover {
+    
+    border: 2px solid #626262;
+}
+
+.marked-color {
+    
+    border: 2px solid #626262;
 }
 
 .colors #c1 {background-color: #D57373;}

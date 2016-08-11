@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>doo</title>
+		<title>doo - inbox</title>
 		<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
 	</head>
@@ -25,23 +25,10 @@
                         <p class="menu-title">my lists<span class='add-object add-list'><a href='#'>add list</a></span></p> 
                         <nav class="menu-of-lists">
                             <ul>
-                                <li><div class ="list-mark "></div><a href="#">shopping list</a></li>
-                                <li><div class ="list-mark "></div><a href="#">birthday party check</a></li>
-                                <li><div class ="list-mark "></div><a href="#">pack for travel</a></li>
+                                <!-- JavaScript will fill this -->
                             </ul>
                         </nav>
                     </div>
-                    <div class ='projects-menu'>
-                        <p class="menu-title">my projects <a href='#' class="add-object add-project">add project</a></p>
-                        <nav class="menu-of-projects">
-                            <ul>
-                                <li><div class ="list-mark "></div><a href="#">UX learning</a></li>
-                                <li><div class ="list-mark "></div><a href="#">change management</a></li>
-                                <li><div class ="list-mark "></div><a href="#">dev that new app</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    
                 </div>
             </div>
             
@@ -63,17 +50,19 @@
                     
                 </div>
                 
-                <a class='btn' id='create-button'>Create New List</a>
-                <a class='btn' id="cancel-button">Cancel</a>
+                <a class='btn' id="cancel-button" href="#">Cancel</a>
+                <a class='btn' id='create-button' href="#">Create New List</a>
                 
             </div>
             
-            <h1>shopping list  &nbsp<span>list</span></h1>
-            
-            <input type="text" placeholder="add a task..." class="task-adder" id="inputter">
-            
-            <div class="list">
-                
+            <div class='list-board'>
+                <h1>inbox  &nbsp<span>list</span></h1>
+
+                <input type="text" placeholder="add a task..." class="task-adder" id="inputter">
+
+                <div class="list">
+                    
+                </div>
             </div>
             
         </section>
