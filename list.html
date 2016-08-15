@@ -1,89 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>doo - inbox</title>
-		<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
-	</head>
 
-	<body>
-       
-		<div class="border"><!-- Nothing at all, only our cool bar --></div>
+<head>
+	<meta charset="utf-8">
+	<title>doo - inbox</title>
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+</head>
 
-         
-        
-        <!-- sidebar with lists, projects and logo -->
-        <aside>
-            
-            <div class="aside-content">
-            
-                <img src="assets/images/logoWhite.png">
-                
-                <div class="side-menu">
-                    <div class ='lists-menu'>
-                        <p class="menu-title">my lists<span class='add-object add-list'><a href='#'>add list</a></span></p> 
-                        <nav class="menu-of-lists">
-                            <ul>
-                                <!-- JavaScript will fill this -->
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            
-            
-        </aside>
-        
-        <section class="tasks">
-            <div class='new-flash'>
-                <input type='text' placeholder="Type your new list's name..." class='name-adder' id='list-name-inputter'>
-                
-                <h2>Choose a color</h2>
-                
-                <div class='colors'>
-                    <div class='color' id='c1'></div>
-                    <div class='color' id='c2'></div>
-                    <div class='color' id='c3'></div>
-                    <div class='color' id='c4'></div>
-                    <div class='color' id='c5'></div>
-                    
-                </div>
-                
-                <a class='btn' id="cancel-button" href="#">Cancel</a>
-                <a class='btn' id='create-button' href="#">Create New List</a>
-                
-            </div>
-            
-            <div class='list-board'>
-                <h1>inbox  &nbsp<span>list</span></h1>
+<body>
 
-                <input type="text" placeholder="add a task..." class="task-adder" id="inputter">
+	<div class="border">
+		<!-- Nothing at all, only our cool bar -->
+	</div>
 
-                <div class="list">
-                    
-                </div>
-            </div>
-            
-        </section>
-        
-        <aside class="favBar">
-            
-        </aside>
-        
-        
 
-		<footer class="container inner-pages">
-			<nav>
-				<ul>
-					<li><a>saiba mais</a></li>
-					<li><a>ajuda</a></li>
-					<li><a>contato</a></li>
-                </ul>
-			</nav>
-		</footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="assets/scripts/newListPage.js"></script>
-        <script src="assets/scripts/app.js"></script>
-	</body>
+
+	<!-- sidebar with lists, projects and logo -->
+	<aside>
+
+		<div class="aside-content">
+
+			<img src="assets/images/logoWhite.png">
+
+			<div class="side-menu">
+				<div class='lists-menu'>
+					<p class="menu-title">my lists<span class='add-object add-list'><a href='#'>add list</a></span></p>
+					<nav class="menu-of-lists">
+						<ul>
+							<!-- JavaScript will fill this -->
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+
+	</aside>
+
+	<section class="tasks">
+		<div class='new-flash'>
+			<input type='text' placeholder="Type your new list's name..." class='name-adder' id='list-name-inputter'>
+
+			<h2>Choose a color</h2>
+
+			<div class='colors'>
+				<div class='color' id='c1'></div>
+				<div class='color' id='c2'></div>
+				<div class='color' id='c3'></div>
+				<div class='color' id='c4'></div>
+				<div class='color' id='c5'></div>
+			</div>
+
+			<a class='btn' id="cancel-button" href="#">Cancel</a>
+			<a class='btn' id='create-button' href="#">Create New List</a>
+
+		</div>
+
+		<div class='list-board'>
+			<h1>inbox  &nbsp<span>list</span></h1>
+
+			<input type="text" placeholder="add a task..." class="task-adder" id="inputter">
+
+			<div class="list">
+
+			</div>
+		</div>
+
+	</section>
+
+	<aside class="favBar">
+		<img src="assets/icos/bookmark.png">
+
+		<div class="fav-task">
+
+
+		</div>
+
+	</aside>
+
+
+
+	<footer class="container inner-pages">
+		<nav>
+			<ul>
+				<li><a>saiba mais</a></li>
+				<li><a>ajuda</a></li>
+				<li><a>contato</a></li>
+			</ul>
+		</nav>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="assets/scripts/newListPage.js"></script>
+	<script src="assets/scripts/app.js"></script>
+</body>
+
 </html>

@@ -100,6 +100,11 @@ var getColor = function(list) {
     return content_array[0];
 };
 
+var addToFavs = function(name, task) {
+    
+    //fill later
+}
+
 var main = function() {
     
     current_list = 'inbox';
@@ -193,7 +198,12 @@ var main = function() {
             $(this).remove();
         });
     });
-
+    
+    // favBar
+    
+    
+    
+  
 };
 
 $(document).ready(main);
